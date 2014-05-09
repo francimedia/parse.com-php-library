@@ -12,6 +12,10 @@
         }
     ],
     "require": {
+        "php": ">=5.3.0",
+        "Enhance-PHP/Enhance-PHP": "dev-master"
+    },
+    "require-dev": {
         "Enhance-PHP/Enhance-PHP": "dev-master"
     },
     "autoload": {
