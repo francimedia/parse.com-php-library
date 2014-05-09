@@ -1,13 +1,6 @@
 <?php
-include 'parseConfig.php';
-include 'parseObject.php';
-include 'parseQuery.php';
-include 'parseUser.php';
-include 'parseFile.php';
-include 'parsePush.php';
-include 'parseGeoPoint.php';
-include 'parseACL.php';
-include 'parseCloud.php';
+
+namespace ParsePHP;
 
 class parseRestClient{
 
@@ -21,7 +14,9 @@ class parseRestClient{
 	public $returnData = '';
 
 	public function __construct(){
-		$parseConfig = new parseConfig;
+		
+		$parseConfig = new \parseConfig;
+
 		$this->_appid = $parseConfig::APPID;
     	$this->_masterkey = $parseConfig::MASTERKEY;
     	$this->_restkey = $parseConfig::RESTKEY;
@@ -199,22 +194,3 @@ class parseRestClient{
 		}
 	}
 }
-
-
-class ParseLibraryException extends Exception{
-	public function __construct($message, $code = 0, Exception $previous = null) {
-		//codes are only set by a parse.com error
-		if($code != 0){
-			$message = "parse.com error: ".$message;
-		}
-
-		parent::__construct($message, $code, $previous);
-	}
-
-	public function __toString() {
-		return __CLASS__ . ": [{$this->code}]: {$this->message}\n";
-	}
-
-}
-
-?>

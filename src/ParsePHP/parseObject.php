@@ -1,6 +1,9 @@
 <?php
 
-class parseObject extends parseRestClient{
+
+namespace ParsePHP;
+
+class parseObject extends parseRestClient {
 	public $_includes = array();
 	private $_className = '';
 

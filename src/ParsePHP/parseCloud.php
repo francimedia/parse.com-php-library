@@ -1,4 +1,7 @@
 <?php
+
+namespace ParsePHP;
+
 /*
 	// Adding the possibility to run parse cloud code functions
 	$cloud = new parseCloud("functionName");
@@ -9,7 +12,7 @@
 	$result = $cloud->run();
 	print_r($result);
 */
-class parseCloud extends parseRestClient{
+class parseCloud extends parseRestClient {
 	public $_options;
 	private $_functionName = '';
 

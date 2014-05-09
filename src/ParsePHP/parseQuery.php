@@ -1,5 +1,8 @@
 <?php
 
+
+namespace ParsePHP;
+
 class parseQuery extends parseRestClient{
 	private $_limit = 100;
 	private $_skip = 0;

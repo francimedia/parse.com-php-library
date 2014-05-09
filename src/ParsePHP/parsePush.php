@@ -1,6 +1,9 @@
 <?php
 
-class parsePush extends parseRestClient{
+
+namespace ParsePHP;
+
+class parsePush extends parseRestClient {
 
 	public $channels;
 	public $channel;

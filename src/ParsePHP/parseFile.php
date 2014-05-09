@@ -1,6 +1,8 @@
 <?php
 
-class parseFile extends parseRestClient{
+namespace ParsePHP;
+
+class parseFile extends parseRestClient {
 
 	private $_fileName;
 	private $_contentType;

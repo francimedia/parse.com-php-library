@@ -1,0 +1,22 @@
+{
+    "name": "francimedia/parse.com-php-library",
+    "description": "Parse SDK for PHP",
+    "keywords": ["parse", "sdk"],
+    "type": "library",
+    "homepage": "https://github.com/francimedia/parse.com-php-library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stephan Alber",
+            "homepage": "https://github.com/francimedia/parse.com-php-library/contributors"
+        }
+    ],
+    "require": {
+        "Enhance-PHP/Enhance-PHP": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "ParsePHP\\": "src/ParsePHP/"
+        }
+    }
+}
